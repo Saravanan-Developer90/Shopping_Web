@@ -1,0 +1,16 @@
+﻿<h1 style="text-align:center">Shopping Details</h1>
+
+<table class="table table-bordered">
+
+
+    @foreach (var item in ViewBag.ProductInfo)
+    {
+        <tr>
+            <td>@item.PId</td>
+            <td>@item.PName</td>
+            <td>@item.PPrice</td>
+            <td>@item.PCategory</td>
+            <td>@item.PIsInStock</td>
+        </tr>
+    }
+</table>
